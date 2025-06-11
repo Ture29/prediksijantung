@@ -4,7 +4,7 @@ import joblib
 model = joblib.load('jantung_model.pkl')
 st.title("Prediksi Jantung")
 # Form input
-with st.form("form_=jantung"):
+with st.form("form_jantung"):
 Age = st.number_input('Age', min_value=0, max_value=20, step=1)
 Sex = st.number_input('Sex', min_value=0, max_value=200)
 ChestPainType = st.number_input('ChestPainType', min_value=0, max_value=150)
